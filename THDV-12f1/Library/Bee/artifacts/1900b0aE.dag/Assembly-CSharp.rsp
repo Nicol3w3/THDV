@@ -374,6 +374,7 @@
 "Assets/DialogueEditor/Example/ExampleInputManager.cs"
 "Assets/LowPolyWater_Pack/Scripts/LowPolyWater.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs"
+"Assets/PauseMenu.cs"
 "Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/MouseLook.cs"
 "Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PlayerMovement.cs"
 "Assets/QuickOutline/Scripts/Outline.cs"
