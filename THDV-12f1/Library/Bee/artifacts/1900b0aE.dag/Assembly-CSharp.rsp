@@ -380,6 +380,7 @@
 "Assets/Scripts/DialogueTrigger.cs"
 "Assets/Scripts/GD_InteractObject.cs"
 "Assets/Scripts/GD_PlayerInteract.cs"
+"Assets/Scripts/MainMenuScript.cs"
 "Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/scri.cs"
 "Assets/Scripts/SO/PlayerDataSO.cs"
