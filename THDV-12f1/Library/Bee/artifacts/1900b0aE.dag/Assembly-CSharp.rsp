@@ -383,6 +383,7 @@
 "Assets/Scripts/LookAt.cs"
 "Assets/Scripts/MainMenuScript.cs"
 "Assets/Scripts/PauseMenu.cs"
+"Assets/Scripts/PhotoScript.cs"
 "Assets/Scripts/scri.cs"
 "Assets/Scripts/SO/PlayerDataSO.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
