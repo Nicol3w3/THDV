@@ -20,7 +20,7 @@ public class PickUp : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 20.0f))
         {
-            if(Input.GetKey(KeyCode.Mouse0))
+            if(Input.GetKey(KeyCode.F))
             {
                 if(hit.transform.gameObject.GetComponent<Pickupable>())
                 {
@@ -30,7 +30,7 @@ public class PickUp : MonoBehaviour
             }
         }
 
-        if(Input.GetKey(KeyCode.Mouse1))
+        if(Input.GetKey(KeyCode.G))
         {
             if(hit.transform.GetComponent<Pickupable>())
             {
