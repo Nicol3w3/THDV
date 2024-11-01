@@ -383,6 +383,7 @@
 "Assets/QuickOutline/Scripts/Outline.cs"
 "Assets/Scripts/ColorPadManager.cs"
 "Assets/Scripts/DialogueTrigger.cs"
+"Assets/Scripts/DoorOpen.cs"
 "Assets/Scripts/GD_InteractObject.cs"
 "Assets/Scripts/GD_PlayerInteract.cs"
 "Assets/Scripts/LookAt.cs"
