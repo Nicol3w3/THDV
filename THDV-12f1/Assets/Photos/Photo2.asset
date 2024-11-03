@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a082a268e79cdb4e826f7a2c37c5334, type: 3}
   m_Name: Photo2
   m_EditorClassIdentifier: 
-  description: aloooo
-  artwork: {fileID: 0}
+  description: 2
+  artwork: {fileID: 21300000, guid: 5a9853a37000b624eb6ee41941666734, type: 3}

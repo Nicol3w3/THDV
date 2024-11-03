@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +5,7 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     public Transform holdPosition;
-    // Start is called before the first frame update
+    private Pickupable currentPickupable; // Variable para almacenar el objeto recogido
 
     // Update is called once per frame
     void Update()
@@ -18,24 +17,39 @@ public class PickUp : MonoBehaviour
     private void CheckForPickup()
     {
         RaycastHit hit;
-        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 20.0f))
+
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 20.0f))
         {
-            if(Input.GetKey(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F)) // Cambiado a GetKeyDown para recoger
             {
-                if(hit.transform.gameObject.GetComponent<Pickupable>())
+                if (hit.transform.gameObject.TryGetComponent<Pickupable>(out Pickupable pickupable))
                 {
-                    //do something
-                    hit.transform.gameObject.GetComponent<Pickupable>().SetPickedState(holdPosition);
+                    SetPickupState(pickupable);
                 }
             }
         }
 
-        if(Input.GetKey(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.G)) // Cambiado a GetKeyDown para soltar
         {
-            if(hit.transform.GetComponent<Pickupable>())
-            {
-                hit.transform.gameObject.GetComponent<Pickupable>().SetDroppedState();
-            }
+            DropItem();
+        }
+    }
+
+    private void SetPickupState(Pickupable pickupable)
+    {
+        if (currentPickupable == null) // Solo recoger si no se tiene uno
+        {
+            currentPickupable = pickupable;
+            currentPickupable.SetPickedState(holdPosition);
+        }
+    }
+
+    private void DropItem()
+    {
+        if (currentPickupable != null) // Solo soltar si hay algo
+        {
+            currentPickupable.SetDroppedState();
+            currentPickupable = null; // Reiniciar el objeto actual
         }
     }
 }

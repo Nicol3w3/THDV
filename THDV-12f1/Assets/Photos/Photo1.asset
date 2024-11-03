@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a082a268e79cdb4e826f7a2c37c5334, type: 3}
   m_Name: Photo1
   m_EditorClassIdentifier: 
-  description: batata
-  artwork: {fileID: 21300000, guid: 2c2a5be59b4a36648a911535c6e46ab8, type: 3}
+  description: '"Miss u Granny"  1'
+  artwork: {fileID: 21300000, guid: 420ff9139f75daf40bb755ef19e529fb, type: 3}
