@@ -390,6 +390,7 @@
 "Assets/Scripts/DoorOpen.cs"
 "Assets/Scripts/GD_InteractObject.cs"
 "Assets/Scripts/GD_PlayerInteract.cs"
+"Assets/Scripts/InventoryUI.cs"
 "Assets/Scripts/LookAt.cs"
 "Assets/Scripts/MainMenuScript.cs"
 "Assets/Scripts/Pad.cs"
