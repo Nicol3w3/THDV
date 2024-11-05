@@ -6,6 +6,8 @@ public class PhotoScript : MonoBehaviour
 {
     private static bool GameIsPaused = false;
     public GameObject PhotoUI;
+    public GameObject othe;
+    public GameObject Photo;
 
     // [SerializeField]
 
@@ -38,6 +40,12 @@ public class PhotoScript : MonoBehaviour
         PhotoUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        PlayerInventory playerInventory = othe.GetComponent<PlayerInventory>();
+        if (playerInventory != null)
+        {
+            playerInventory.PhotoCollected();
+            Photo.SetActive(false);
+        }
     }
 
     void Pause()
